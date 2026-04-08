@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "LULU.WEB3",
     description: "Web3 Content Creator & Strategist Portfolio",
+    url: "https://lulu-portfolio-vc.vercel.app",
     siteName: "LULU.WEB3",
     images: [
       {
