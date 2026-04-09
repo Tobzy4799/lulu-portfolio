@@ -110,7 +110,7 @@ function ProjectCard({
       viewport={{ once: true }}
       variants={fadeInUp}
       whileHover={{ y: -8, transition: { duration: 0.3 } }}
-      className="group text-slate-700 border-1 rounded-2xl border-purple-100 bg-purple-400 p-6 shadow-sm hover:shadow-xl transition-shadow"
+      className="group text-slate-700 border-1 rounded-2xl border-purple-100 bg-gradient-to-r from-purple-400 to-purple-300 p-6 shadow-sm hover:shadow-xl transition-shadow"
     >
       <div className="mb-3 flex items-center justify-between ">
         <h4 className="text-xl text-cyan-300 font-bold group-hover:text-cyan-800 transition-colors">
@@ -211,7 +211,7 @@ export default function Home() {
       title: "Wallet Connect",
       type: "WEB3",
       desc: `I created written and video content contents which help break down complex terms and made it easy to onboard users to 
-      to wallet connect 
+      to wallet connect. I also assisted in hosting a live stream for their watch party.
 
 My Contents: 
 <a href="https://x.com/louyemalo/status/2029525127587565904?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (1) →</a> 
@@ -225,10 +225,14 @@ My Contents:
     {
       title: "MetaMask",
       type: "WEB3",
-      desc: `i mainly created video content for MetaMask and also hosted IRL event for them which made it to onboard users physically to using the metamask wallet.
-      i made sure the IRL event was impactful while working with a whole dedicated team. 
+      desc: `i hosted IRL event for MetaMask which made it easy to onboard users physically to using the metamask wallet while also making amazing content about the event. I made sure the IRL event was impactful while working with a whole dedicated team. 
 My Contents: 
-<a href="https://x.com/louyemalo/status/2038485150116270290?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (1) →</a> 
+<a href="https://x.com/louyemalo/status/2038224638468051237?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (1) →</a> 
+<a href="https://x.com/louyemalo/status/2037925296884568339?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (2) →</a> 
+<a href="https://x.com/louyemalo/status/2037880641446871467?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (3) →</a> 
+<a href="https://x.com/louyemalo/status/2037841906051240355?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (4) →</a> 
+<a href="https://x.com/louyemalo/status/2017899239041327561?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (5) →</a> 
+<a href="https://x.com/louyemalo/status/2038485150116270290?s=46" target="_blank" class="text-cyan-300 hover:underline">watch (6) →</a> 
 
 `,
       stackArray: [],
@@ -335,7 +339,7 @@ My Content:
       {/* Progress Bar */}
       <motion.div
         style={{ scaleX: scrollYProgress }}
-        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-600 to-purple-900 origin-left z-[60]"
+        className="fixed top-0 left-0 right-0 h-1 bg-gradient-to-r from-purple-400 to-purple-700 origin-left z-[60]"
       />
 
       {/* Navbar */}
@@ -349,7 +353,7 @@ My Content:
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-xl font-bold bg-gradient-to-r from-purple-600 to-purple-700 bg-clip-text text-transparent"
+            className="text-xl font-bold bg-gradient-to-r from-purple-400 to-purple-700 bg-clip-text text-transparent"
           >
             LULU.WEB3
           </motion.a>
@@ -364,11 +368,11 @@ My Content:
                 <motion.button
                   key={item}
                   onClick={() => handleNavClick(item.toLowerCase())}
-                  className="text-purple-500 hover:text-purple-700 transition-colors relative group"
+                  className="text-purple-600 hover:text-purple-500 transition-colors relative group"
                   whileHover={{ y: -2 }}
                 >
                   {item}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-600 group-hover:w-full transition-all duration-300" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-purple-400 group-hover:w-full transition-all duration-300" />
                 </motion.button>
               ),
             )}
@@ -397,7 +401,7 @@ My Content:
                     <button
                       key={item}
                       onClick={() => handleNavClick(item.toLowerCase())}
-                      className="text-purple-500 font-medium hover:text-purple-700 transition"
+                      className="text-purple-500 font-medium hover:text-purple-600 transition"
                     >
                       {item}
                     </button>
@@ -411,7 +415,7 @@ My Content:
 
       {/* Hero Section */}
       <section className="relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-purple-300 to-purple-600" />
+        <div className="absolute inset-0 bg-gradient-to-br from-purple-200 to-purple-300" />
         <div className="relative mx-auto flex max-w-6xl flex-col items-center px-6 py-24 text-center">
           <motion.div
             initial="hidden"
@@ -420,14 +424,14 @@ My Content:
             className="flex flex-col items-center"
           >
             <motion.div variants={scaleIn} className="relative mb-8">
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-purple-800 blur-2xl opacity-30 animate-pulse" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-400 to-purple-700 blur-2xl opacity-30 animate-pulse" />
               <Image
                 src="/lulu.jpeg"
                 alt="Profile"
                 width={280}
                 height={280}
                 priority
-                className="relative h-70 w-70 rounded-full border-4 border-white object-cover shadow-xl"
+                className="relative h-70 w-70 rounded-full border-4 border-purple-700 object-cover shadow-xl"
               />
             </motion.div>
 
@@ -473,14 +477,14 @@ My Content:
               transition={{ repeat: Infinity, duration: 1.5 }}
               className="w-6 h-10 border-2 border-purple-300 rounded-full flex justify-center"
             >
-              <div className="w-1.5 h-3 bg-purple-600 rounded-full mt-2" />
+              <div className="w-1.5 h-3 bg-purple-400 rounded-full mt-2" />
             </motion.div>
           </motion.div>
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-24 bg-gradient-to-br from-purple-300 to-purple-500">
+      <section id="about" className="py-24 bg-gradient-to-br from-purple-200 to-purple-300">
         <div className="mx-auto max-w-5xl px-6">
           <AnimatedSection>
             <h2 className="text-3xl font-bold mb-8">
@@ -514,7 +518,7 @@ My Content:
                 whileInView={{ opacity: 1, rotateY: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6 }}
-                className="bg-gradient-to-br from-purple-200 to-purple-300 rounded-2xl p-6"
+                className="bg-gradient-to-br from-purple-100 to-purple-400 rounded-2xl p-6"
               >
                 <h4 className="text-lg font-semibold mb-3 text-cyan-500">
                   Quick Facts
@@ -534,7 +538,7 @@ My Content:
       {/* Skills Section */}
       <section
         id="skills"
-        className="py-24 bg-gradient-to-br from-purple-300 to-purple-600"
+        className="py-24 bg-gradient-to-br from-purple-200 to-purple-300"
       >
         <div className="mx-auto max-w-6xl px-6">
           <AnimatedSection>
@@ -575,7 +579,7 @@ My Content:
       </section>
 
       {/* Projects Section */}
-      <section id="projects" className="py-24 bg-gradient-to-br from-purple-300 to-purple-600">
+      <section id="projects" className="py-24 bg-gradient-to-br from-purple-200 to-purple-300">
         <div className="mx-auto max-w-6xl px-6">
           <AnimatedSection>
             <h2 className="text-3xl font-bold mb-4 text-center">
@@ -603,7 +607,7 @@ My Content:
       {/* Experience Section */}
       <section
         id="experience"
-        className="py-24 bg-gradient-to-br from-purple-300 to-purple-600"
+        className="py-24 bg-gradient-to-br from-purple-200 to-purple-300"
       >
         <div className="mx-auto max-w-5xl px-6">
           <AnimatedSection>
@@ -625,7 +629,7 @@ My Content:
                 className="relative pl-8 border-l-2 border-purple-600"
               >
                 <div className="absolute left-0 top-0 w-4 h-4 -translate-x-[9px] rounded-full bg-gradient-to-r from-purple-600 to-purple-900" />
-                <div className="bg-purple-400 rounded-2xl p-6 shadow-sm border border-purple-100">
+                <div className="bg-gradient-to-r from-purple-400 to-purple-300 rounded-2xl p-6 shadow-sm border border-purple-100">
                   <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
                     <h4 className="text-xl text-cyan-300 font-bold">{job.role}</h4>
                     <span className="text-sm text-cyan-300 font-medium bg-indigo-50 px-3 py-1 rounded-full">
@@ -655,7 +659,7 @@ My Content:
         </div>
       </section>
       {/* Contact Section */}
-      <section id="contact" className="py-24 bg-gradient-to-br from-purple-300 to-purple-600">
+      <section id="contact" className="py-24 bg-gradient-to-br from-purple-200 to-purple-300">
         <div className="mx-auto max-w-4xl px-6 text-center">
           <AnimatedSection>
             <h2 className="text-3xl font-bold mb-4">
