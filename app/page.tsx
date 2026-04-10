@@ -315,7 +315,7 @@ My Content:
       company: "Multiple Web3 Projects",
       period: "2024 - Present",
       points: [
-        "Worked with projects including RealtyX DAO, Arbitrum, Billions Network, Sonic, Send, and Qube",
+        "Worked with projects including RealtyX DAO, Arbitrum, Sonic, Send, and Qube",
         "Created promotional and educational content to drive awareness and user understanding",
         "Supported community growth through consistent content and engagement",
         "Helped translate technical features into user-friendly messaging"
